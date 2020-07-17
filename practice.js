@@ -2,31 +2,31 @@
 
 //Create a variable called myName that is a string data type
 
-myName = 'Ethan'
+const myName = 'Ethan';
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
 
-myAge = 26
+const myAge = 26;
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
 
-const lovesCode = true
+const lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-let greatestFear
+let greatestFear = 
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
-const devMountainGoal = null
+let devMountainGoal = null;
 
 //////////////////PROBLEM 6////////////////////
 
@@ -37,17 +37,14 @@ const devMountainGoal = null
 
 function greeting(name){
   return "Hello, " + name;
-
 }
-greeting("Frodo");
-
 
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-let newGreeting = function(name){
+const newGreeting = function(name){
   return "Hello, " + name;
   }
 newGreeting("Trogdor")
@@ -91,9 +88,14 @@ const devMountainClassPet = dog.name;
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 function nameCheck(name){
-  if (name === 'Steven')
-    return 'What is up Steven?';
-} if 
+  if(name === 'Steven'){
+    return 'What is up Steven?'
+  } else if(name === 'Bryan'){
+    return 'Hey Bryan!'
+  } else {
+    return ('Cool name, ' + name)
+  }
+}
 
 //////////////////PROBLEM 11////////////////////
 
@@ -120,14 +122,17 @@ const mathSum = add(3, 4);
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 function faveColorFinder(color){
-if(color == 'red')
-return 'red is a great color' {
-  if(coloer == 'green')
-  return 'green is a solid favorite color' {
-    if(color == 'black')
-    return 'so trendy'
+  if(color === 'red'){
+    return 'red is a great color'
   }
-} else
+  if(color === 'green'){
+    return 'green is a solid favorite color'
+  }
+  if(color === 'black'){
+    return 'so trendy'
+  } else {
+    return 'you need to evaluate your favorite color choice'
+  }
 }
 
 //////////////////PROBLEM 13////////////////////
@@ -152,16 +157,16 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
@@ -172,7 +177,7 @@ let age = 26
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-age = 30
+age = 27
 
 // Good news! We can live forever. Set your age to 999
 
